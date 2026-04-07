@@ -12,5 +12,6 @@ scoreboard players set $TotalWallRunTime yrh.010.global 120
 
 # setting init
 data modify storage yrh.010:setting Activate set value true
+data modify storage yrh.010:setting WallKick set value true
 data modify storage yrh.010:setting WallRun set value true
 data modify storage yrh.010:setting WallJump set value true

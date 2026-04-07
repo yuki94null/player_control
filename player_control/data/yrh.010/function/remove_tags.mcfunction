@@ -31,6 +31,8 @@ tag @s remove yrh.010.direction.z
 tag @s remove yrh.010.state.wall_side
 tag @s remove yrh.010.state.wall_side.right
 tag @s remove yrh.010.state.wall_side.left
+tag @s remove yrh.010.state.wall_side.front
+tag @s remove yrh.010.state.wall_side.back
 
 # 壁走りのタグを消す
 tag @s remove yrh.010.state.wall_run

@@ -1,4 +1,6 @@
 
+tag @s remove yrh.010.state.wall_kick.disable
+
 tag @s remove yrh.010.state.wall_run.right
 tag @s remove yrh.010.state.wall_run.left
 

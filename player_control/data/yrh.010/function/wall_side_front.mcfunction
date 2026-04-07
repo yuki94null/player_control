@@ -1,0 +1,1 @@
+tag @s add yrh.010.state.wall_side.front
