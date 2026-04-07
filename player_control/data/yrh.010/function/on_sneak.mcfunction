@@ -1,0 +1,1 @@
+tag @s[tag=yrh.010.state.hang.mantle] add yrh.010.state.hang.mantle.boost

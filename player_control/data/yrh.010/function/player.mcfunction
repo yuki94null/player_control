@@ -10,8 +10,11 @@ function yrh.010:get_state
 # 向いてるほう検知
 function yrh.010:get_direction
 
-# 着地時に消すやつ
+# スニーク時に変えるやつ
+execute if entity @s[tag=yrh.010.state.sneak] run function yrh.010:on_sneak
+# 着地時に変えるやつ
 execute if entity @s[tag=yrh.010.state.on_ground] run function yrh.010:on_ground
+
 # 落下検知
 execute unless data entity @s[tag=!yrh.010.state.on_ground] {fall_distance:0.0d} run tag @s add yrh.010.state.falling
 
