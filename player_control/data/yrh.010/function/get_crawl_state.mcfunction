@@ -1,0 +1,1 @@
+execute positioned ~ ~1 ~ unless entity @s[dy=0] run tag @s add yrh.010.state.crawl

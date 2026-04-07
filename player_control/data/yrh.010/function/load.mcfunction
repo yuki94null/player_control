@@ -20,3 +20,4 @@ data modify storage yrh.010:setting WallRun set value true
 data modify storage yrh.010:setting WallJump set value true
 data modify storage yrh.010:setting Hang set value true
 data modify storage yrh.010:setting Mantle set value true
+data modify storage yrh.010:setting Crawl set value true

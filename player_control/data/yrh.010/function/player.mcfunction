@@ -9,6 +9,9 @@ function yrh.010:input_detection
 function yrh.010:get_state
 # 向いてるほう検知
 function yrh.010:get_direction
+# クロウル状態検知
+function yrh.010:get_crawl_state
+
 
 # スニーク時に変えるやつ
 execute if entity @s[tag=yrh.010.state.sneak] run function yrh.010:on_sneak
@@ -28,7 +31,7 @@ execute positioned 0.0 0.0 0.0 rotated ~45 0 positioned ^ ^ ^-0.5 align xz facin
 
 #  前
 execute positioned 0.0 0.0 0.0 rotated ~45 0 positioned ^ ^ ^-0.5 align xz facing -0.5 0.0 -0.5 rotated ~-45 0 \
-    positioned as @s unless block ^ ^ ^0.75 #yrh.010:thru run function yrh.010:wall_side_front
+    positioned as @s unless block ^ ^ ^0.45 #yrh.010:thru run function yrh.010:wall_side_front
 
 #  後ろ
 execute positioned 0.0 0.0 0.0 rotated ~45 0 positioned ^ ^ ^-0.5 align xz facing -0.5 0.0 -0.5 rotated ~-45 0 \
@@ -76,3 +79,8 @@ execute if data storage yrh.010:setting {Activate:true} \
 tag @s[tag=!yrh.010.state.wall_run,tag=yrh.010.state.wall_run.right] add yrh.010.state.wall_run.disable.right
 tag @s[tag=!yrh.010.state.wall_run,tag=yrh.010.state.wall_run.left] add yrh.010.state.wall_run.disable.left
 
+# クロウルの処理
+execute if data storage yrh.010:setting {Activate:true} \
+    if data storage yrh.010:setting {Crawl:true} \
+    if entity @s[tag=yrh.010.state.on_ground,tag=yrh.010.input.left,tag=yrh.010.input.right,tag=yrh.010.input.sneak] run \
+        function yrh.010:crawl/main
