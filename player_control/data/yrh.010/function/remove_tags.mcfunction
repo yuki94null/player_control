@@ -36,3 +36,6 @@ tag @s remove yrh.010.state.wall_side.back
 
 # 壁走りのタグを消す
 tag @s remove yrh.010.state.wall_run
+
+# ハングのタグを消す
+tag @s remove yrh.010.state.hang

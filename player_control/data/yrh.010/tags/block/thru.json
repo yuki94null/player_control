@@ -3,6 +3,7 @@
         {"id":"air","required":false},
         {"id":"cave_air","required":false},
         {"id":"void_air","required":false},
+        {"id":"#air","required":false},
         {"id":"water","required":false},
         {"id":"lava","required":false},
         {"id":"tall_grass","required":false},

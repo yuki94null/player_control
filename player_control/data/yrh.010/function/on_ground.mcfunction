@@ -4,9 +4,14 @@ tag @s remove yrh.010.state.wall_kick.disable
 tag @s remove yrh.010.state.wall_run.right
 tag @s remove yrh.010.state.wall_run.left
 
+tag @s remove yrh.010.state.hang.mantle
+tag @s remove yrh.010.state.hang.mantle.boost
+
 tag @s remove yrh.010.state.wall_run.disable.right
 tag @s remove yrh.010.state.wall_run.disable.left
 
 scoreboard players reset @s yrh.010.wall_run.jump.count
 scoreboard players reset @s yrh.010.wall_run.time
 scoreboard players reset @s yrh.010.wall_run.time.total
+scoreboard players reset @s yrh.010.hang.time
+scoreboard players reset @s yrh.010.hang.mantle.count
