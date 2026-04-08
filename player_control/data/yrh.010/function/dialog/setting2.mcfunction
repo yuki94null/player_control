@@ -50,4 +50,4 @@ $dialog show @s {type:"minecraft:multi_action",title:[{"text":"Advanced Control 
         {id:"00",display:[{"text":"Infinite","color":aqua}],initial:$(HangTime_0)}\
     ]},\
     ],\
-    actions:[{label:[{"text":"Confirm"}],action:{type:"dynamic/run_command",template:"$(command)"},width:80},{label:[{"text":"Cancel"}],width:80},{action:{type:"minecraft:run_command",command:"trigger yrh.010.setting set 1"},label:[{"text":"Previous Page"}],width:80},{label:[{"text":"Initialize"}],action:{type:"run_command",command:"/trigger yrh.010.setting set 4"},width:80}],columns:2}
+    actions:[{label:[{"text":"Confirm"}],action:{type:"dynamic/run_command",template:"$(command)"},width:80},{action:{type:"minecraft:run_command",command:"trigger yrh.010.setting set 1"},label:[{"text":"Previous Page"}],width:80},{label:[{"text":"Initialize"}],action:{type:"run_command",command:"/trigger yrh.010.setting set 4"},width:80},{label:[{"text":"Cancel"}],width:80}],columns:1}

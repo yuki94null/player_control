@@ -11,4 +11,4 @@ $dialog show @s {type:"minecraft:multi_action",title:[{"text":"Advanced Control 
     {key:"slide",type:"minecraft:boolean",label:[{"text":"Slide"}],initial:$(Slide),on_true:"1",on_false:"0"},\
     {key:"sit",type:"minecraft:boolean",label:[{"text":"Sit"}],initial:$(Sit),on_true:"1",on_false:"0"},\
     ],\
-    actions:[{label:[{"text":"Confirm"}],action:{type:"dynamic/run_command",template:"$(command)"},width:80},{label:[{"text":"Cancel"}],width:80},{action:{type:"minecraft:run_command",command:"trigger yrh.010.setting set 2"},label:[{"text":"Next Page"}],width:80},{label:[{"text":"Initialize"}],action:{type:"run_command",command:"/trigger yrh.010.setting set 3"},width:80}],columns:2}
+    actions:[{label:[{"text":"Confirm"}],action:{type:"dynamic/run_command",template:"$(command)"},width:80},{action:{type:"minecraft:run_command",command:"trigger yrh.010.setting set 2"},label:[{"text":"Next Page"}],width:80},{label:[{"text":"Initialize"}],action:{type:"run_command",command:"/trigger yrh.010.setting set 3"},width:80},{label:[{"text":"Cancel"}],width:80}],columns:1}

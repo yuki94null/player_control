@@ -20,7 +20,6 @@ function yrh.010:get_direction
 # クロウル状態検知
 function yrh.010:get_crawl_state
 
-
 # スニーク時に変えるやつ
 execute if entity @s[tag=yrh.010.state.sneak] run function yrh.010:on_sneak
 # 着地時に変えるやつ
@@ -84,3 +83,7 @@ tag @s[tag=!yrh.010.state.wall_run,tag=yrh.010.state.wall_run.left] add yrh.010.
 execute if data storage yrh.010:setting {Crawl:true} \
     if entity @s[tag=yrh.010.state.on_ground,tag=yrh.010.input.left,tag=yrh.010.input.right,tag=yrh.010.input.sneak] run \
         function yrh.010:crawl/main
+
+#  解除
+execute if entity @s[tag=yrh.010.crawl.active] run \
+    function yrh.010:crawl/kill_shulker
