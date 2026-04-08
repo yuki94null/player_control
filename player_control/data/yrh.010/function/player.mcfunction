@@ -87,3 +87,6 @@ execute if data storage yrh.010:setting {Crawl:true} \
 #  解除
 execute if entity @s[tag=yrh.010.crawl.active] run \
     function yrh.010:crawl/kill_shulker
+
+# 座る処理
+function yrh.010:sit/main

@@ -8,6 +8,8 @@ scoreboard objectives add yrh.010.wall_run.time.total dummy
 scoreboard objectives add yrh.010.wall_run.jump.count dummy
 scoreboard objectives add yrh.010.hang.time dummy
 scoreboard objectives add yrh.010.hang.mantle.count dummy
+scoreboard objectives add yrh.010.sit.time dummy
+
 
 # 定数
 scoreboard players set #10 yrh.010.global 10
