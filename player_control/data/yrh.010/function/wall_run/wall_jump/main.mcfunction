@@ -20,11 +20,6 @@ tag @s remove yrh.010.state.wall_run.left
 # タイマーリセット
 scoreboard players reset @s yrh.010.wall_run.time
 
-
-
-
-# function yrh.010:wall_run/remove_wall_run_state
-
 # 演出
 #  音
 playsound entity.breeze.death player @a ~ ~ ~ 1.0 1.0 0.0
