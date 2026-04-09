@@ -42,4 +42,10 @@ tag @s remove yrh.010.state.hang
 
 # クロウル消す
 attribute @s jump_strength modifier remove yrh.010:crawl
+attribute @s movement_speed modifier remove yrh.010:crawl
 tag @s remove yrh.010.state.crawl
+
+
+# スライディング消す
+attribute @s jump_strength modifier remove yrh.010:slide
+attribute @s movement_speed modifier remove yrh.010:slide

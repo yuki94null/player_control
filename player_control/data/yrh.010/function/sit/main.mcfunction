@@ -1,4 +1,6 @@
 # 条件切
+execute unless data storage yrh.010:setting {Sit:true} run return fail
+
 execute unless entity @s[tag=yrh.010.state.on_ground,tag=yrh.010.input.sprint,x_rotation=75..90] run return run scoreboard players reset @s yrh.010.sit.time
 # 動き速いとむり
 execute unless predicate {condition:"entity_properties",entity:"this",predicate:{movement:{speed:{max:0.1}}}} run return run scoreboard players reset @s yrh.010.sit.time

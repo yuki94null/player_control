@@ -11,8 +11,8 @@ execute if entity @s[tag=yrh.010.state.wall_run.disable.left,tag=yrh.010.state.w
 execute if data storage yrh.010:setting {WallJump:true} unless score @s yrh.010.wall_run.jump.count >= $WallJumpCount yrh.010.global if entity @s[tag=yrh.010.state.wall_side.left,tag=yrh.010.input.right] run return run function yrh.010:wall_run/wall_jump/main
 execute if data storage yrh.010:setting {WallJump:true} unless score @s yrh.010.wall_run.jump.count >= $WallJumpCount yrh.010.global if entity @s[tag=yrh.010.state.wall_side.right,tag=yrh.010.input.left] run return run function yrh.010:wall_run/wall_jump/main
 #  infinite
-execute if data storage yrh.010:setting {WallJump:true} unless score $WallJumpCount yrh.010.global matches 0 if entity @s[tag=yrh.010.state.wall_side.left,tag=yrh.010.input.right] run return run function yrh.010:wall_run/wall_jump/main
-execute if data storage yrh.010:setting {WallJump:true} unless score $WallJumpCount yrh.010.global matches 0 if entity @s[tag=yrh.010.state.wall_side.right,tag=yrh.010.input.left] run return run function yrh.010:wall_run/wall_jump/main
+execute if data storage yrh.010:setting {WallJump:true} if score $WallJumpCount yrh.010.global matches 0 if entity @s[tag=yrh.010.state.wall_side.left,tag=yrh.010.input.right] run return run function yrh.010:wall_run/wall_jump/main
+execute if data storage yrh.010:setting {WallJump:true} if score $WallJumpCount yrh.010.global matches 0 if entity @s[tag=yrh.010.state.wall_side.right,tag=yrh.010.input.left] run return run function yrh.010:wall_run/wall_jump/main
 
 # ウォールラン中のタグをつける
 #  ウォールラン中のタグ　毎ティック消す

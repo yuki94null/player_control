@@ -88,5 +88,14 @@ execute if data storage yrh.010:setting {Crawl:true} \
 execute if entity @s[tag=yrh.010.crawl.active] run \
     function yrh.010:crawl/kill_shulker
 
+# # スライディングの処理
+# execute if data storage yrh.010:setting {Slide:true} \
+#     if entity @s[tag=yrh.010.state.on_ground,tag=yrh.010.input.left,tag=yrh.010.input.right,tag=yrh.010.input.sprint,tag=!yrh.010.input.sneak] run \
+#         function yrh.010:slide/main
+
+# #  解除
+# execute if entity @s[tag=yrh.010.state.slide] run \
+#     function yrh.010:slide/kill_shulker
+
 # 座る処理
 function yrh.010:sit/main
