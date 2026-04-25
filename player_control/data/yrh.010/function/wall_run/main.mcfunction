@@ -25,12 +25,13 @@ tag @s[tag=yrh.010.state.wall_side.right] add yrh.010.state.wall_run.right
 scoreboard players add @s yrh.010.wall_run.time 1
 scoreboard players add @s yrh.010.wall_run.time.total 1
 
-# 絶対値TPと相対値TPでyのモーションを0にする
-tp ~ 0.0 ~
-tp ~ ~ ~
-
 # 移動が遅いのでモーションを加えて加速
 execute positioned 0.0 0.0 0.0 positioned ^ ^ ^0.02 summon marker run function yrh.010:get_motion
+#  高さの固定
+execute store result score $y hb.Motion run data get entity @s Motion[1] -10000
+execute if score $y hb.Motion matches ..0 run scoreboard players set $y hb.Motion 0
+execute if score $y hb.Motion matches 10000.. run scoreboard players set $y hb.Motion 10000
+
 function p_motion:main/xyz
 
 # 演出など

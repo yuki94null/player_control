@@ -1,3 +1,4 @@
+say try crawl
 # 念のためジャンプできないように
 attribute @s jump_strength modifier add yrh.010:crawl -1.0 add_multiplied_total
 
